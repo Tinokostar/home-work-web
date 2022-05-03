@@ -1,0 +1,31 @@
+<head>
+    <style>
+        div{color: black;}
+    </style>
+</head>
+<body>
+    
+    <script>
+        var y = 500;
+        var x = 0;
+        setInterval(Timer, 1000);
+
+        function Timer(){
+            x = x  + 1;
+            document.getElementById('timer').innerHTML = x;
+        }
+
+        function imgDownSize(){
+            document.getElementById('img').style.width = y + 500 +'px' ;
+        }
+
+        function imgUpSize()
+        {
+            document.getElementById('img').style.width = y + 'px';
+        }
+
+    </script>
+    <div style="width: 100px; height: auto;"></div>
+    <h1 id="timer"></h1>
+    <img src="1.jfif" alt="img" id="img" style="width: 500px; height: auto;" onmouseover="imgDownSize()" onmouseout="imgUpSize()">
+</body>

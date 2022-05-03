@@ -1,0 +1,68 @@
+<html>
+<head>
+    <style>
+
+    </style>
+</head>
+    <script>
+        function check()
+        {
+
+            if(document.form1.text1.value=="הראל")
+                {
+                alert("ברכה")
+                }
+            else
+                {
+                alert("נסה שוב!")
+                }
+        }
+
+        function culc()
+        {
+            x = document.form1.text1.value
+            alert(eval(x))
+            document.form1.text1.value = eval(x)
+            document.body.style.backgroundColor = "red"
+        }
+
+        function test()
+        {
+        alert(document.form1.radio1[1].checked)
+        alert(document.form1.radio1[0].checked)
+        }
+        
+        
+    </script>
+
+<body>
+        
+    <center>
+    <div>
+        <form name="form1">
+            <br>
+            <br>
+            <input type="text" name="text1">
+            <br>
+            <br>
+            <input type="reset" neme="button1" value="אפס">
+            <input type="button" neme="button1" value="הקלד שם" onclick="check()">
+            <input type="button" neme="button1" value="culc" onclick="culc()">
+            <input type="button" neme="button1" value="test" onclick="test()">
+            <br>
+            <br>
+            <input type="radio" name="radio1" value="male">
+            זכר
+            <input type="radio" name="radio1" value="female">
+            נקבה
+            <br>
+            <br>
+            <input type="checkbox" name="c1" value="1">
+            <input type="checkbox" name="c1" value="2">
+            <input type="checkbox" name="c1" value="3">
+
+        </form>
+    </div>
+    </center>
+</body>
+</html>
